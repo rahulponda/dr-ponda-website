@@ -1,0 +1,52 @@
+
+.content h1 {
+    color: #00796b;
+}
+.content p {
+    font-size: 1.2em;
+}
+img {
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+a {
+    color: #00796b;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.align-left {
+  float: left;
+  margin-right: 15px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 15px;
+}
+
+.video-placeholder {
+  width: 100%;
+  max-width: 640px;
+  height: 360px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 16px;
+  border: 2px dashed #999;
+}

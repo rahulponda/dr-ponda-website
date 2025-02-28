@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="menu-toggle">☰</span>
+      <div class="logo-container">
+          <a href="index.html" class="logo">
+              <img src="Media/Photos/Dr_Ponda_Logo.png" alt="Dr. Ponda Logo">
+          </a>
+      </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-homeopathy.html">About Homeopathy</a></li>
+    <li><a href="dr-ponda.html">Dr. Ponda</a></li>
+    <li><a href="contact.html"class="active">Contact</a></li>
+    <li><a href="FAQs.html">FAQs</a></li>
+  </ul>
+
+  <div class="logo-container">
+      <a href="contact.html" class="logo1">
+          <img src="Media/Photos/Dr_Ponda_Logo_1.png" alt="Dr. Ponda Logo 1">
+      </a>
+  </div>
+
+</nav>
+
+    <div class="content">
+
+    <h1 class="center-text">Contact Dr. Ponda</h1>
+    <p class="center-text">Phone/WhatsApp: +254 733 736 003</p>
+    <p class="center-text">Email: <a href="mailto:drponda99@gmail.com">drponda99@gmail.com</a></p>
+    <br>
+    <h2 class="center-text">Practice Hours:</h2>
+    <p class="center-text">Monday - Friday: 9am to 4:30pm</p>
+    <p class="center-text">Saturday: 9am to 1pm</p>
+    <p class="center-text">Consultations: In-Person OR Online</p>
+    <p class="center-text">(<em>Closed on Sundays and Public Holidays</em>)</p>
+
+
+    </div>
+    <footer>
+        <p>&copy; Dr. Vaishali Ponda - Homeopathy Practice</p>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector("nav ul");
+
+        // Open menu on hover over toggle button
+        menuToggle.addEventListener("mouseenter", function () {
+            navMenu.classList.add("active");
+            menuToggle.classList.add("active");
+        });
+
+        // Keep menu open when hovering over it
+        navMenu.addEventListener("mouseenter", function () {
+            navMenu.classList.add("active");
+            menuToggle.classList.add("active");
+        });
+
+        // Close menu when mouse leaves both toggle and menu
+        menuToggle.addEventListener("mouseleave", function () {
+            setTimeout(() => {
+                if (!navMenu.matches(":hover")) {
+                    navMenu.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                }
+            }, 300);
+        });
+
+        navMenu.addEventListener("mouseleave", function () {
+            navMenu.classList.remove("active");
+            menuToggle.classList.remove("active");
+        });
+    });
+    </script>
+
+</body>
+</html>

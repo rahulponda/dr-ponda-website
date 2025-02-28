@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ponda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dr-ponda.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="menu-toggle">☰</span>
+      <div class="logo-container">
+          <a href="index.html" class="logo">
+              <img src="Media/Photos/Dr_Ponda_Logo.png" alt="Dr. Ponda Logo">
+          </a>
+      </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-homeopathy.html">About Homeopathy</a></li>
+    <li><a href="dr-ponda.html" class="active">Dr. Ponda</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="FAQs.html">FAQs</a></li>
+  </ul>
+
+  <div class="logo-container">
+      <a href="contact.html" class="logo1">
+          <img src="Media/Photos/Dr_Ponda_Logo_1.png" alt="Dr. Ponda Logo 1">
+      </a>
+  </div>
+
+</nav>
+
+    <div class="content">
+
+    <h1 class="center-text">About Dr. Vaishali Ponda</h1>
+    <h3 class="center-text">B.H.M.S Homeopathy the Holistic Aproach to Healing</h3>
+     <img src="../Media/Photos/Dr_Ponda_Portrait.png" alt="Dr. Vaishali Ponda" class="ponda-responsive-image">
+        <p></p>
+    <p>Dr. Vaishali Ponda has done her Bachelor in Homoeopathic Medicine (B.H.M.S.) from the prestigious C.M.P.Homoeopathic Medical University from Mumbai, India, in the year 1993. Post that she taught the subject of Homeopathy Pharmacopia at the C.M.P.H. University. Later she joined the Indian Institute of Research Centre in Homeopathy for Asthma & gained vast experience & Knowledge for a period of 3 years. Also practiced Homeopathy as a Private Consultant for a period of 3 years in Mumbai. Matrimony brought her to Nairobi, Kenya, where she has widened her Horizon in Homeopathy & private practice as a Consultant in Nairobi since 1996.
+</p>
+    <p>She has been trained by renowned Homeopaths such as Dr.Sankaran, Dr. Jayesh Shah, Dr. Mahesh Gandhi, Dr. Jonathan Hardy, Dr. Borker, Dr. Gajanan, Micheal Yakir, and she continues to increase her knowledge in homeopathy about new concepts and new remedies in the field.
+</p>
+<p>In practice she uses various approaches to treat many illnesses.
+She provides Homoeopathic treatment for the whole family from children to seniors, as well as pets. She specializes in treating Asthma, Allergies, Migraines & Sinusitis, Arthritis & Backache, Hormonal issues and Women health issues, Stomach problems like Irritable Bowel, Hypertension, Kidney and Gall stones, Chronic conditions like Autoimmune disease, Skin and Hair issues.
+</p>
+<p>For children she has successfully treated flu’s, common cold and cough, without having to give them antibiotics and steroids. Also helped kids with ADHD, Dyslexia and Autism.</p>
+    </div>
+    <footer>
+        <p>&copy; Dr. Vaishali Ponda - Homeopathy Practice</p>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector("nav ul");
+
+        // Open menu on hover over toggle button
+        menuToggle.addEventListener("mouseenter", function () {
+            navMenu.classList.add("active");
+            menuToggle.classList.add("active");
+        });
+
+        // Keep menu open when hovering over it
+        navMenu.addEventListener("mouseenter", function () {
+            navMenu.classList.add("active");
+            menuToggle.classList.add("active");
+        });
+
+        // Close menu when mouse leaves both toggle and menu
+        menuToggle.addEventListener("mouseleave", function () {
+            setTimeout(() => {
+                if (!navMenu.matches(":hover")) {
+                    navMenu.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                }
+            }, 300);
+        });
+
+        navMenu.addEventListener("mouseleave", function () {
+            navMenu.classList.remove("active");
+            menuToggle.classList.remove("active");
+        });
+    });
+    </script>
+
+</body>
+</html>

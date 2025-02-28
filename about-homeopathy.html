@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Homeopathy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about-homeopathy.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="menu-toggle">☰</span>
+      <div class="logo-container">
+          <a href="index.html" class="logo">
+              <img src="Media/Photos/Dr_Ponda_Logo.png" alt="Dr. Ponda Logo">
+          </a>
+      </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-homeopathy.html" class="active">About Homeopathy</a></li>
+    <li><a href="dr-ponda.html">Dr. Ponda</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="FAQs.html">FAQs</a></li>
+  </ul>
+
+  <div class="logo-container">
+      <a href="contact.html" class="logo1">
+          <img src="Media/Photos/Dr_Ponda_Logo_1.png" alt="Dr. Ponda Logo 1">
+      </a>
+  </div>
+
+</nav>
+
+    <div class="content">
+
+    <h1 class="center-text">About Homeopathy</h1>
+    <p>HOMOEOPATHY is a system of medicine that uses diluted remedies to treat disease. The remedies aim to stimulate the body’s own healing mechanism.
+The system was developed by a German Physician Dr. Samuel Hahnemann in 1807. Since its discovery it has acclaimed to become a popular Alternative and Complementary way of Healing Worldwide – particularly in Europe, U.K.,Asia, Far East and South America. The Royal family in the U.K. have used it for their well-being.
+</p>
+<p>Homoeopathic medicines are made from Natural substances like Plants, Animals, Minerals & Metals. They are prepared using a process called Potentisation or Dynamisation, which involves repeated dilutions & Succussions to increase the medicines curative power.
+Homoeopathic medicines are cost effective and easy to administer & have no side effects.
+</p>
+<p>Homeopaths believe that physical disease often has mental and emotional consequences. Hence the approach to the patient is Holistic – taking into consideration not only patient’s physical symptoms, but also giving lot of importance to emotions and stresses in various aspects of individuals life, thus not only giving relief to the person physically but also emotionally, to deal with many difficult situations in his life.
+</p>
+  <h2>Homeopathy is based on these Principles:
+  </h2>
+    <ul>
+      <li>“Like cures like” – a law that a disease can be cured by a substance that produces similar symptoms in healthy people.</li>
+      <li>“Law of minimum dose” – the idea that the lower the dose of the medication, the greater its effectiveness.</li>
+    </ul>
+  <!--  <img src="https://via.placeholder.com/400" alt="Homeopathy Image">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Homeopathy Video"></iframe> -->
+
+    </div>
+    <footer>
+        <p>&copy; Dr. Vaishali Ponda - Homeopathy Practice</p>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector("nav ul");
+
+        // Open menu on hover over toggle button
+        menuToggle.addEventListener("mouseenter", function () {
+            navMenu.classList.add("active");
+            menuToggle.classList.add("active");
+        });
+
+        // Keep menu open when hovering over it
+        navMenu.addEventListener("mouseenter", function () {
+            navMenu.classList.add("active");
+            menuToggle.classList.add("active");
+        });
+
+        // Close menu when mouse leaves both toggle and menu
+        menuToggle.addEventListener("mouseleave", function () {
+            setTimeout(() => {
+                if (!navMenu.matches(":hover")) {
+                    navMenu.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                }
+            }, 300);
+        });
+
+        navMenu.addEventListener("mouseleave", function () {
+            navMenu.classList.remove("active");
+            menuToggle.classList.remove("active");
+        });
+    });
+    </script>
+
+</body>
+</html>

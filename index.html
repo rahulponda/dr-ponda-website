@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <nav class="navbar">
+     <span class="menu-toggle">☰</span>
+      <div class="logo-container">
+          <a href="index.html" class="logo">
+              <img src="Media/Photos/Dr_Ponda_Logo.png" alt="Dr. Ponda Logo">
+          </a>
+      </div>
+
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about-homeopathy.html">About Homeopathy</a></li>
+    <li><a href="dr-ponda.html">Dr. Ponda</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="FAQs.html">FAQs</a></li>
+  </ul>
+
+  <div class="logo-container">
+      <a href="contact.html" class="logo1">
+          <img src="Media/Photos/Dr_Ponda_Logo_1.png" alt="Dr. Ponda Logo 1">
+      </a>
+  </div>
+
+</nav>
+
+    <div class="content">
+
+    <h1 class="center-text">Welcome to Dr. Vaishali Ponda's Homeopathy Practice</h1>
+    <p class="center-text"><em>Explore the World of Homeopathy, Get to know Dr. Ponda & Receive Holistic Natural Treatments</em></p>
+    <ul>
+      <li><a href="about-homeopathy.html"><strong>Discover the Power of Homeopathy – A Natural Path to Wellness.</strong></a></li>
+      <p>Are you looking for a gentle, natural way to restore balance and well-being? Homeopathy offers a holistic approach that works with your body’s natural healing abilities. Based on time-tested principles, homeopathy provides personalized remedies to support your health—without harsh chemicals or side effects. Curious about how it works and how it can help you?</p>
+      <li><a href="dr-ponda.html"><strong>Meet Dr. Ponda – A Pioneer in Homeopathy For Over 3 Decades!</strong></a></li>
+      <p>With over 30 years of experience, Dr. Ponda has been transforming lives through the power of homeopathy. Renowned for her deep expertise and compassionate approach, she has helped countless patients find relief and lasting wellness—naturally. Want to learn more about her incredible journey and groundbreaking work? </p>
+      <li><a href="contact.html"><strong>Your Path to Healing Starts Here – Book an Appointment with Dr. Ponda.</strong></a></li>
+      <p>Looking for expert homeopathic care? Dr. Ponda is here to guide you on your wellness journey with personalized treatments and decades of experience. Whether you have questions or are ready to schedule an appointment, we’re here to help! Find out more about Dr. Ponda’s practice hours and how to get in touch.</p>
+      <li><a href="FAQs.html"><strong>Homeopathy Uncovered – Get Answers to Your Questions!</strong></a></li>
+      <p>Curious about how homeopathy works? Wondering if it’s right for you? Whether you’re new to homeopathy or looking to deepen your understanding, we’ve got you covered! From how remedies are made to what conditions they can help with, our FAQs provide clear, insightful answers to your most pressing questions. Ready to demystify homeopathy?  </p>
+    </ul>
+
+    </div>
+    <footer>
+        <p>&copy; Dr. Vaishali Ponda - Homeopathy Practice</p>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector("nav ul");
+
+        // Open menu on hover over toggle button
+        menuToggle.addEventListener("mouseenter", function () {
+            navMenu.classList.add("active");
+            menuToggle.classList.add("active");
+        });
+
+        // Keep menu open when hovering over it
+        navMenu.addEventListener("mouseenter", function () {
+            navMenu.classList.add("active");
+            menuToggle.classList.add("active");
+        });
+
+        // Close menu when mouse leaves both toggle and menu
+        menuToggle.addEventListener("mouseleave", function () {
+            setTimeout(() => {
+                if (!navMenu.matches(":hover")) {
+                    navMenu.classList.remove("active");
+                    menuToggle.classList.remove("active");
+                }
+            }, 300);
+        });
+
+        navMenu.addEventListener("mouseleave", function () {
+            navMenu.classList.remove("active");
+            menuToggle.classList.remove("active");
+        });
+    });
+    </script>
+
+</body>
+</html>
